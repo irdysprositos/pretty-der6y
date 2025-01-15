@@ -33,3 +33,5 @@ jobs:
             -m 2 \
             -r ./assets/map.geojson \
             -t "$TIME"
+        env:
+          BACKEND: ${{ secrets.BACKEND }}
