@@ -27,7 +27,7 @@ jobs:
           TIME="$(TZ="Asia/Shanghai" date -d "-$RANDOM_SEC seconds" +"%Y-%m-%d %H:%M:%S")"
 
           cd cli
-          cargo run --release \
+          cargo run --release -- \
             -u "${{ secrets.ACCOUNT }}" \
             -p "${{ secrets.PASSWORD }}" \
             -m 2 \
