@@ -38,7 +38,7 @@ jobs:
           TIME="$(TZ="Asia/Shanghai" date -d "-$RANDOM_SEC seconds" +"%Y-%m-%d %H:%M:%S")"
 
           ./target/release/cli \
-            -u "${{ secrets.USERNAME }}" \
+            -u "${{ secrets.ACCOUNT }}" \
             -p "${{ secrets.PASSWORD }}" \
             -m 2.4 \
             -r ./assets/map.geojson \
